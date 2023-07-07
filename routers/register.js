@@ -28,7 +28,7 @@ router.post("/login", async (req, res) => {
   await registerController.adduserRegisteralready(req, res)
 })
 
-router.patch("/logout/:_id", auth,checkRole(USER_ROLE ,ASSOCIATION_ROLE), async (req, res) => {
+router.patch("/logout/:_id",auth,checkRole(ASSOCIATION_ROLE,USER_ROLE), async (req, res) => {
   await registerController.deleteUser(req, res)
 })
 
