@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const donationSchema = new mongoose.Schema({
   FullName: {
     type: String,
-    unique: true,
-    minlength: 8,
-    maxlenght: 200,
+    // unique: true,
+    // minlength: 8,
+    // maxlenght: 200,
     trim: true,
   },
   DrugName: {
